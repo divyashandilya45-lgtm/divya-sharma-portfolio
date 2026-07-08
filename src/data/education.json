@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "degree": "M.A. Psychology",
+    "institution": "IGNOU",
+    "status": "Pursuing",
+    "description": "Deepening understanding of human behavior, emotional intelligence, counseling psychology, and mental health to enhance training and mentoring capabilities.",
+    "icon": "Brain"
+  },
+  {
+    "id": 2,
+    "degree": "PGDCA",
+    "institution": "NIELIT",
+    "status": "Completed",
+    "description": "Post Graduate Diploma in Computer Applications — building technical proficiency and digital literacy skills.",
+    "icon": "Monitor"
+  },
+  {
+    "id": 3,
+    "degree": "Financial Accounting Diploma",
+    "institution": "NSIC",
+    "status": "Completed",
+    "description": "Specialized diploma in financial accounting, strengthening analytical and financial management skills.",
+    "icon": "Calculator"
+  },
+  {
+    "id": 4,
+    "degree": "M.Sc.",
+    "institution": "DAV College",
+    "status": "Completed",
+    "description": "Master of Science — building a strong foundation in scientific research, analytical thinking, and academic excellence.",
+    "icon": "Microscope"
+  },
+  {
+    "id": 5,
+    "degree": "12th PCB",
+    "institution": "Kendriya Vidyalaya",
+    "status": "Completed",
+    "description": "Higher secondary education with Physics, Chemistry, and Biology — developing scientific temperament and disciplined learning habits.",
+    "icon": "School"
+  }
+]

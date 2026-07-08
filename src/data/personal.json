@@ -1,0 +1,62 @@
+{
+  "name": "Divya Sharma",
+  "title": "Soft Skills Trainer | Branch Manager | Psychology Student",
+  "roles": [
+    "Soft Skills Trainer",
+    "Branch Manager",
+    "Psychology Student",
+    "Future L&D Professional"
+  ],
+  "typingWords": [
+    "Leadership",
+    "Communication",
+    "Training",
+    "Growth",
+    "Psychology",
+    "Learning"
+  ],
+  "about": {
+    "intro": "I'm Divya Sharma — a passionate Soft Skills Trainer, Branch Manager, and Psychology student dedicated to empowering individuals through communication, emotional intelligence, and leadership.",
+    "story": [
+      {
+        "year": "Foundation",
+        "title": "Started with Science",
+        "description": "Built a strong academic foundation with PCB at Kendriya Vidyalaya, followed by M.Sc at DAV College — developing analytical thinking and discipline that would later shape my training approach."
+      },
+      {
+        "year": "Discovery",
+        "title": "Entered the Training World",
+        "description": "Discovered my true passion for teaching and mentoring. Began working with government projects, transforming young minds through structured soft skills training programs."
+      },
+      {
+        "year": "Impact",
+        "title": "Naandi Foundation & CSR Projects",
+        "description": "Joined Naandi Foundation and led impactful CSR initiatives including Mahindra Pride Classroom, Skill Bridge Program, and Digital Equalizers for Girls — training 1000+ students across multiple states."
+      },
+      {
+        "year": "Growth",
+        "title": "Focal Skill & TOT Certification",
+        "description": "Became a TOT Certified Trainer at Focal Skill, conducting government training projects, developing training materials, and facilitating large-scale workshops."
+      },
+      {
+        "year": "Leadership",
+        "title": "Branch Manager at Himalaya Gramin Nidhi",
+        "description": "Took on the role of Branch Manager, overseeing branch operations, loan processing, team management, market analysis, and community relations in the financial sector."
+      },
+      {
+        "year": "Present",
+        "title": "Pursuing MA Psychology",
+        "description": "Currently pursuing MA Psychology at IGNOU to deepen understanding of human behavior, emotional intelligence, and counseling — bridging training expertise with psychological insights."
+      }
+    ],
+    "mission": "Empowering people through communication, emotional intelligence, and leadership."
+  },
+  "contact": {
+    "email": "divyasharma@email.com",
+    "phone": "+91-XXXXX-XXXXX",
+    "linkedin": "https://linkedin.com/in/divyasharma",
+    "github": "https://github.com/divyasharma",
+    "location": "Mandi, Himachal Pradesh, India"
+  },
+  "quote": "Empowering individuals through communication, confidence, and continuous learning."
+}
