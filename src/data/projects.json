@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "title": "Mahindra Pride Classroom",
+    "category": "CSR Initiative",
+    "overview": "A flagship CSR initiative by Mahindra Group focused on empowering underprivileged youth with employability skills, confidence building, and career readiness through intensive soft skills training programs.",
+    "objectives": [
+      "Build communication and interview skills",
+      "Enhance confidence and self-presentation",
+      "Prepare students for corporate employment",
+      "Develop leadership and teamwork abilities"
+    ],
+    "impact": "Trained hundreds of students from underprivileged backgrounds, significantly improving their employability and confidence. Many graduates successfully placed in corporate roles.",
+    "skillsUsed": ["Communication", "Interview Skills", "Presentation", "Career Development", "Leadership"],
+    "color": "#6366f1"
+  },
+  {
+    "id": 2,
+    "title": "Digital Equalizers for Girls",
+    "category": "CSR Initiative",
+    "overview": "A transformative program aimed at bridging the digital gender gap by empowering young girls with digital literacy, communication skills, and career guidance through structured training modules.",
+    "objectives": [
+      "Bridge digital literacy gap for girls",
+      "Build confidence in technology usage",
+      "Develop communication and presentation skills",
+      "Empower girls for future career opportunities"
+    ],
+    "impact": "Empowered hundreds of young girls with digital skills and confidence, creating pathways for better education and career opportunities in underserved communities.",
+    "skillsUsed": ["Digital Literacy", "Communication", "Mentoring", "Empowerment", "Training Design"],
+    "color": "#ec4899"
+  },
+  {
+    "id": 3,
+    "title": "Skill Bridge Program",
+    "category": "Government Project",
+    "overview": "A comprehensive skill development program designed to bridge the gap between academic education and industry requirements through targeted soft skills training in government institutions.",
+    "objectives": [
+      "Bridge gap between academics and industry needs",
+      "Develop job-ready soft skills",
+      "Improve employability of students",
+      "Create sustainable skill development framework"
+    ],
+    "impact": "Successfully trained large batches of students across multiple government institutions, creating a measurable improvement in their interview performance and professional readiness.",
+    "skillsUsed": ["Training Design", "Public Speaking", "Assessment", "Workshop Facilitation", "Mentoring"],
+    "color": "#8b5cf6"
+  },
+  {
+    "id": 4,
+    "title": "Government College Training",
+    "category": "Government Project",
+    "overview": "Comprehensive soft skills training programs delivered across government colleges, focusing on enhancing students' communication abilities, interview preparedness, and professional development.",
+    "objectives": [
+      "Enhance communication skills of college students",
+      "Prepare students for competitive interviews",
+      "Develop professional etiquette and presentation skills",
+      "Build leadership and teamwork capabilities"
+    ],
+    "impact": "Impacted thousands of government college students across multiple states, with significant improvement in campus placement rates and student confidence levels.",
+    "skillsUsed": ["Communication", "Interview Skills", "Group Discussion", "HR Interview", "STAR Method"],
+    "color": "#3b82f6"
+  },
+  {
+    "id": 5,
+    "title": "Government School Training",
+    "category": "Government Project",
+    "overview": "Foundational soft skills training programs designed for government school students, focusing on building confidence, communication, and life skills from an early age.",
+    "objectives": [
+      "Build foundational communication skills",
+      "Develop confidence and self-expression",
+      "Introduce career awareness and goal setting",
+      "Foster leadership qualities in young students"
+    ],
+    "impact": "Created a positive impact on young minds across government schools, instilling confidence and communication skills that will serve as foundations for their future careers.",
+    "skillsUsed": ["Storytelling", "Public Speaking", "Coaching", "Emotional Intelligence", "Conflict Resolution"],
+    "color": "#10b981"
+  }
+]

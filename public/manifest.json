@@ -1,0 +1,16 @@
+{
+  "name": "Divya Sharma Portfolio",
+  "short_name": "Divya Sharma",
+  "description": "Official Premium Personal Brand Hub for Divya Sharma — Soft Skills Trainer & Psychologist Scholar",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B1120",
+  "theme_color": "#3A3A8C",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}

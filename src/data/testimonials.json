@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Rahul Verma",
+    "role": "Student",
+    "organization": "Government College, Delhi NCR",
+    "text": "Divya ma'am's training completely transformed my approach to interviews. Her STAR method workshops and mock interview sessions gave me the confidence I never had. I landed my first job within a month of completing the training!",
+    "rating": 5
+  },
+  {
+    "id": 2,
+    "name": "Priya Mehra",
+    "role": "Program Manager",
+    "organization": "Naandi Foundation",
+    "text": "Divya is one of the most dedicated trainers we've worked with. Her ability to connect with students from diverse backgrounds and transform their communication skills is remarkable. She consistently exceeds training objectives.",
+    "rating": 5
+  },
+  {
+    "id": 3,
+    "name": "Amit Kumar Singh",
+    "role": "District Education Officer",
+    "organization": "Government of Uttar Pradesh",
+    "text": "The soft skills training delivered by Divya Sharma across our government institutions has shown measurable impact on student confidence and employability. Her structured approach and engaging delivery set her apart.",
+    "rating": 5
+  },
+  {
+    "id": 4,
+    "name": "Sneha Patel",
+    "role": "Student",
+    "organization": "Mahindra Pride Classroom",
+    "text": "Before the training, I could barely speak in front of 5 people. After Divya ma'am's sessions, I presented confidently in front of 200+ people at my college fest. She doesn't just teach skills — she builds people.",
+    "rating": 5
+  },
+  {
+    "id": 5,
+    "name": "Rajesh Gupta",
+    "role": "Regional Head",
+    "organization": "Himalaya Gramin Nidhi Ltd",
+    "text": "Divya has been an exceptional Branch Manager. Her leadership, attention to detail, and ability to build strong community relationships have significantly improved our branch performance and customer satisfaction.",
+    "rating": 5
+  },
+  {
+    "id": 6,
+    "name": "Dr. Meenakshi Sharma",
+    "role": "Principal",
+    "organization": "Government Girls College, Rajasthan",
+    "text": "The Digital Equalizers program led by Divya was transformative for our students. The girls who participated showed remarkable improvement in confidence, digital skills, and career awareness. We need more trainers like her.",
+    "rating": 5
+  }
+]

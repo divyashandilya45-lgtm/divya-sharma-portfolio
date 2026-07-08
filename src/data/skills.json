@@ -1,0 +1,40 @@
+{
+  "categories": [
+    {
+      "name": "Soft Skills",
+      "skills": [
+        { "name": "Leadership", "level": 95 },
+        { "name": "Communication", "level": 98 },
+        { "name": "Presentation", "level": 92 },
+        { "name": "Conflict Resolution", "level": 88 },
+        { "name": "Emotional Intelligence", "level": 90 },
+        { "name": "Critical Thinking", "level": 85 },
+        { "name": "Storytelling", "level": 93 },
+        { "name": "Decision Making", "level": 87 },
+        { "name": "Coaching", "level": 91 },
+        { "name": "Time Management", "level": 86 },
+        { "name": "Problem Solving", "level": 88 },
+        { "name": "Training Design", "level": 94 },
+        { "name": "Strategic Planning", "level": 83 },
+        { "name": "Public Speaking", "level": 96 },
+        { "name": "Interview Preparation", "level": 95 },
+        { "name": "Personal Branding", "level": 85 },
+        { "name": "HR Interview", "level": 92 },
+        { "name": "Group Discussion", "level": 94 },
+        { "name": "Email Writing", "level": 88 },
+        { "name": "STAR Method", "level": 96 },
+        { "name": "Grammar", "level": 90 },
+        { "name": "Reasoning", "level": 85 },
+        { "name": "Vocabulary", "level": 89 },
+        { "name": "Market Analysis", "level": 80 }
+      ]
+    },
+    {
+      "name": "Languages",
+      "skills": [
+        { "name": "English", "level": 95 },
+        { "name": "Hindi", "level": 98 }
+      ]
+    }
+  ]
+}

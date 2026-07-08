@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Certified Soft Skills Trainer",
+    "issuer": "Professional Certification",
+    "description": "Comprehensive certification in soft skills training methodology, curriculum design, and delivery techniques for corporate and educational settings.",
+    "icon": "Award"
+  },
+  {
+    "id": 2,
+    "title": "Training of Trainers (TOT)",
+    "issuer": "Government Certified",
+    "description": "Certified under the Training of Trainers program, qualifying to train and mentor fellow trainers in soft skills delivery and facilitation.",
+    "icon": "Users"
+  },
+  {
+    "id": 3,
+    "title": "Government Training Projects",
+    "issuer": "Government of India",
+    "description": "Authorized trainer for government-sponsored skill development and soft skills training projects across multiple states.",
+    "icon": "Landmark"
+  },
+  {
+    "id": 4,
+    "title": "CSR Projects Certification",
+    "issuer": "Corporate Social Responsibility",
+    "description": "Certified trainer for corporate CSR initiatives focused on youth empowerment, digital literacy, and employability enhancement.",
+    "icon": "Heart"
+  },
+  {
+    "id": 5,
+    "title": "Mahindra Pride Classroom",
+    "issuer": "Mahindra Group",
+    "description": "Certified trainer for the Mahindra Pride Classroom program — a flagship initiative empowering underprivileged youth with employability skills.",
+    "icon": "Star"
+  },
+  {
+    "id": 6,
+    "title": "Skill Bridge Program",
+    "issuer": "Skill Development Initiative",
+    "description": "Certified facilitator for the Skill Bridge Program, bridging the gap between academic education and industry-ready skills.",
+    "icon": "Zap"
+  }
+]

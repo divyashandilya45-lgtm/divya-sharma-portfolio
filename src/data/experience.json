@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "role": "Branch Manager",
+    "company": "Himalaya Gramin Nidhi Ltd",
+    "type": "Full-time",
+    "period": "Current",
+    "description": "Managing complete branch operations for a financial institution, overseeing loan processing, team leadership, market analysis, and ensuring regulatory compliance while building strong community relationships.",
+    "highlights": [
+      "Branch Operations",
+      "Loan Processing",
+      "Team Management",
+      "Market Analysis",
+      "Leadership",
+      "Compliance",
+      "Community Relations"
+    ],
+    "icon": "Building2"
+  },
+  {
+    "id": 2,
+    "role": "Soft Skills Trainer",
+    "company": "Naandi Foundation",
+    "type": "Contract",
+    "period": "Previous",
+    "description": "Delivered comprehensive soft skills training across government colleges, government schools, and multiple CSR projects. Led transformative programs including Mahindra Pride Classroom, Skill Bridge Program, and Digital Equalizers for Girls.",
+    "subRoles": [
+      "Government Colleges",
+      "Government Schools",
+      "CSR Projects"
+    ],
+    "projects": [
+      "Mahindra Pride Classroom",
+      "Skill Bridge Program",
+      "Digital Equalizers For Girls"
+    ],
+    "highlights": [
+      "Communication",
+      "Interview Skills",
+      "Presentation Skills",
+      "Career Development",
+      "Leadership",
+      "Conflict Resolution"
+    ],
+    "icon": "GraduationCap"
+  },
+  {
+    "id": 3,
+    "role": "Soft Skills Trainer",
+    "company": "Focal Skill",
+    "type": "Contract",
+    "period": "Previous",
+    "description": "Served as a TOT Certified Trainer conducting government training projects, facilitating workshops, performing assessments, developing training materials, and mentoring fellow trainers.",
+    "highlights": [
+      "TOT Certified Trainer",
+      "Government Training Projects",
+      "Workshop Facilitation",
+      "Assessment",
+      "Training Materials",
+      "Mentoring"
+    ],
+    "icon": "Presentation"
+  },
+  {
+    "id": 4,
+    "role": "Travel Agent",
+    "company": "Travel Kingdom",
+    "type": "Full-time",
+    "period": "Previous",
+    "description": "Managed travel planning, customer service, supplier negotiations, and booking operations, developing strong communication and client management skills.",
+    "highlights": [
+      "Travel Planning",
+      "Customer Service",
+      "Supplier Negotiation",
+      "Booking Software"
+    ],
+    "icon": "Plane"
+  }
+]
