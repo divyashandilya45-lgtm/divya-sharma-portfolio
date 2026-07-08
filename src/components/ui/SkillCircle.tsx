@@ -13,7 +13,7 @@ interface SkillCircleProps {
 export function SkillCircle({ name, percentage, size = 120, strokeWidth = 8 }: SkillCircleProps) {
   const [progress, setProgress] = useState(0);
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const isInView = useInView(ref, { once: true, margin: "-10px" });
 
   const radius = (size - strokeWidth) / 2;
   const circumference = radius * 2 * Math.PI;

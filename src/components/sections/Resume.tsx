@@ -5,11 +5,12 @@ import { motion } from "framer-motion";
 import { SectionHeading } from "../ui/SectionHeading";
 import { GlassCard } from "../ui/GlassCard";
 import { MagneticButton } from "../ui/MagneticButton";
-import { Download, FileText, ExternalLink, Award, Landmark, Briefcase } from "lucide-react";
+import { Download, FileText, ExternalLink, Award, Landmark, Briefcase, Mail, Phone, MapPin } from "lucide-react";
+import personalData from "@/data/personal.json";
 
 export function Resume() {
   const handleDownload = () => {
-    // Standard download routine (triggers file download once resume.pdf is uploaded by user)
+    // Triggers download of the resume file
     window.open("/resume.pdf", "_blank");
   };
 
@@ -20,111 +21,160 @@ export function Resume() {
 
       <div className="mx-auto max-w-7xl px-6 md:px-12">
         <SectionHeading
-          badge="Documents Hub"
-          title="Curriculum Vitae"
-          subtitle="Access full curriculum summary, credentials verification, or download the printable PDF copy."
+          badge="Curriculum Vitae"
+          title="Resume Hub"
+          subtitle="Explore the detailed profile overview, verified credentials, and download a printable PDF copy of the resume."
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
           {/* Left panel: Description & Action buttons */}
           <div className="lg:col-span-5 flex flex-col items-start gap-6">
-            <h3 className="font-heading text-2xl font-bold text-white leading-tight">
+            <h3 className="font-heading text-2xl md:text-3xl font-bold text-white leading-tight">
               Looking for a verified <br />
-              <span className="gradient-text">L&D Professional?</span>
+              <span className="gradient-text">L&D Specialist?</span>
             </h3>
             <p className="font-body text-sm text-text-secondary leading-relaxed md:text-base">
-              Explore the summary of skills, certifications, and operational accomplishments in detail, or download the formal corporate layout for your records.
+              You can read the full professional profile summary, work milestones, and key competencies on the right, or click below to download a copy.
             </p>
 
             <div className="flex flex-wrap gap-4 mt-2">
-              <MagneticButton onClick={handleDownload} variant="primary">
-                Download Resume PDF
+              <MagneticButton onClick={handleDownload} variant="primary" className="shadow-lg shadow-accent-purple/20">
+                Download PDF Copy
                 <Download className="ml-2 h-4 w-4" />
               </MagneticButton>
               
               <MagneticButton onClick={() => window.open("/resume.pdf", "_blank")} variant="secondary">
-                Preview In Tab
+                Open in New Tab
                 <ExternalLink className="ml-2 h-4 w-4" />
               </MagneticButton>
             </div>
           </div>
 
-          {/* Right panel: Visual resume summary card dashboard */}
+          {/* Right panel: High-Fidelity Visual Resume Sheet */}
           <div className="lg:col-span-7">
             <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="glass rounded-2xl p-6 md:p-8 border border-white/5 shadow-2xl relative"
+              className="glass rounded-2xl border border-white/10 shadow-2xl relative overflow-hidden flex flex-col"
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-accent-purple/5 to-accent-blue/5 rounded-2xl pointer-events-none" />
+              {/* Top gradient highlight */}
+              <div className="h-2 w-full bg-gradient-to-r from-accent-purple via-accent-pink to-accent-blue" />
+              
+              <div className="p-6 md:p-8 space-y-6">
+                {/* Header info */}
+                <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b border-white/5 pb-5">
+                  <div>
+                    <h4 className="font-heading text-xl font-bold text-white tracking-wide">
+                      DIVYA SHARMA
+                    </h4>
+                    <span className="font-mono text-xs text-accent-purple uppercase tracking-widest block mt-0.5">
+                      L&D Specialist • Branch Operations Manager
+                    </span>
+                  </div>
+                  <div className="flex flex-col gap-1 text-[11px] font-mono text-text-muted">
+                    <span className="flex items-center gap-1.5 justify-end">
+                      <Mail className="h-3.5 w-3.5 text-accent-purple" />
+                      {personalData.contact.email}
+                    </span>
+                    <span className="flex items-center gap-1.5 justify-end">
+                      <MapPin className="h-3.5 w-3.5 text-accent-pink" />
+                      Mandi, Himachal Pradesh
+                    </span>
+                  </div>
+                </div>
 
-              {/* Resume Header */}
-              <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b border-white/5 pb-6 mb-6">
-                <div>
-                  <h4 className="font-heading text-lg font-bold text-white">
-                    DIVYA SHARMA
-                  </h4>
-                  <span className="font-mono text-xs text-text-muted">
-                    L&D Specialist • Branch Operations Lead
-                  </span>
+                {/* Profile Summary */}
+                <div className="space-y-2">
+                  <h5 className="font-heading text-xs font-bold text-white uppercase tracking-widest flex items-center gap-2">
+                    <FileText className="h-4 w-4 text-accent-purple" />
+                    Profile Summary
+                  </h5>
+                  <p className="font-body text-xs text-text-secondary leading-relaxed">
+                    Empathetic Soft Skills Trainer, Operational Manager, and Psychology scholar. Certified TOT specialist with experience training 1000+ students on communication, leadership, and STAR interview methodologies. Proven track record managing microfinance branch operations and delivering CSR projects.
+                  </p>
                 </div>
-                <div className="flex items-center gap-1.5 font-mono text-[10px] font-bold text-accent-purple bg-accent-purple/10 border border-accent-purple/20 px-3 py-1 rounded-full uppercase">
-                  <FileText className="h-3.5 w-3.5" />
-                  Executive Summary
+
+                {/* Experience snippet */}
+                <div className="space-y-3">
+                  <h5 className="font-heading text-xs font-bold text-white uppercase tracking-widest flex items-center gap-2">
+                    <Briefcase className="h-4 w-4 text-accent-pink" />
+                    Key Professional Milestones
+                  </h5>
+                  
+                  <div className="space-y-3 border-l border-white/5 pl-4 ml-1.5">
+                    {/* Item 1 */}
+                    <div className="relative">
+                      <div className="absolute -left-[20.5px] top-1.5 h-2 w-2 rounded-full bg-accent-pink" />
+                      <div className="flex justify-between items-baseline gap-2 mb-0.5">
+                        <span className="font-heading text-xs font-bold text-white">Branch Manager</span>
+                        <span className="font-mono text-[9px] text-text-muted">Current</span>
+                      </div>
+                      <span className="font-mono text-[10px] text-text-secondary block mb-1">Himalaya Gramin Nidhi Ltd</span>
+                      <p className="font-body text-[11px] text-text-muted leading-relaxed">
+                        Directing financial branch operations, credit processing, team management, compliance, and customer relations.
+                      </p>
+                    </div>
+
+                    {/* Item 2 */}
+                    <div className="relative">
+                      <div className="absolute -left-[20.5px] top-1.5 h-2 w-2 rounded-full bg-accent-blue" />
+                      <div className="flex justify-between items-baseline gap-2 mb-0.5">
+                        <span className="font-heading text-xs font-bold text-white">Soft Skills Trainer</span>
+                        <span className="font-mono text-[9px] text-text-muted">Previous</span>
+                      </div>
+                      <span className="font-mono text-[10px] text-text-secondary block mb-1">Naandi Foundation & CSR Initiatives</span>
+                      <p className="font-body text-[11px] text-text-muted leading-relaxed">
+                        Led Mahindra Pride Classroom and Skill Bridge Program, coaching underprivileged youth on career preparedness.
+                      </p>
+                    </div>
+                  </div>
                 </div>
+
+                {/* Education snippet */}
+                <div className="space-y-2">
+                  <h5 className="font-heading text-xs font-bold text-white uppercase tracking-widest flex items-center gap-2">
+                    <Landmark className="h-4 w-4 text-accent-blue" />
+                    Academic Highlights
+                  </h5>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+                    <div className="glass p-2.5 rounded-lg border border-white/5">
+                      <div className="flex justify-between items-baseline gap-2">
+                        <span className="font-heading text-[11px] font-bold text-white">M.A. Psychology</span>
+                        <span className="font-mono text-[9px] text-accent-purple font-semibold">Pursuing</span>
+                      </div>
+                      <span className="font-mono text-[9px] text-text-muted">IGNOU</span>
+                    </div>
+                    <div className="glass p-2.5 rounded-lg border border-white/5">
+                      <div className="flex justify-between items-baseline gap-2">
+                        <span className="font-heading text-[11px] font-bold text-white">M.Sc. Physics/Science</span>
+                        <span className="font-mono text-[9px] text-success font-semibold">Completed</span>
+                      </div>
+                      <span className="font-mono text-[9px] text-text-muted">DAV College</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Core Competencies tags */}
+                <div className="space-y-2 border-t border-white/5 pt-4">
+                  <h5 className="font-heading text-[10px] font-bold text-white uppercase tracking-widest">
+                    Expertise Highlights
+                  </h5>
+                  <div className="flex flex-wrap gap-1.5">
+                    {["Communication", "Leadership Coaching", "STAR Method", "Branch Management", "Behavioral Mentoring"].map((tag, idx) => (
+                      <span
+                        key={idx}
+                        className="text-[9px] font-mono text-white bg-white/5 border border-white/10 px-2 py-1 rounded"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
               </div>
-
-              {/* Resume Highlights details */}
-              <div className="space-y-6">
-                {/* Exp highlight */}
-                <div className="flex items-start gap-4">
-                  <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-accent-purple/10 border border-accent-purple/20 flex-shrink-0">
-                    <Briefcase className="h-5 w-5 text-accent-purple" />
-                  </div>
-                  <div>
-                    <h5 className="font-heading text-sm font-bold text-white mb-1">
-                      Professional Operations Management
-                    </h5>
-                    <p className="font-body text-xs text-text-secondary leading-relaxed">
-                      Branch Manager directing Himalaya Gramin Nidhi financial systems and credit distributions.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Training highlight */}
-                <div className="flex items-start gap-4">
-                  <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-accent-pink/10 border border-accent-pink/20 flex-shrink-0">
-                    <Award className="h-5 w-5 text-accent-pink" />
-                  </div>
-                  <div>
-                    <h5 className="font-heading text-sm font-bold text-white mb-1">
-                      CSR Project Execution
-                    </h5>
-                    <p className="font-body text-xs text-text-secondary leading-relaxed">
-                      Delivered corporate social responsibility modules under Naandi Foundation (Mahindra Pride, Digital Equalizers).
-                    </p>
-                  </div>
-                </div>
-
-                {/* Academic highlight */}
-                <div className="flex items-start gap-4">
-                  <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-accent-blue/10 border border-accent-blue/20 flex-shrink-0">
-                    <Landmark className="h-5 w-5 text-accent-blue" />
-                  </div>
-                  <div>
-                    <h5 className="font-heading text-sm font-bold text-white mb-1">
-                      Psychology & Human Behavior
-                    </h5>
-                    <p className="font-body text-xs text-text-secondary leading-relaxed">
-                      Deepening educational structures with M.A. Psychology to implement cognitive behavioral learning cycles.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
             </motion.div>
           </div>
 

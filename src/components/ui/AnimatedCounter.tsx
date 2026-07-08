@@ -12,7 +12,7 @@ interface AnimatedCounterProps {
 export function AnimatedCounter({ value, suffix = "", duration = 1.5 }: AnimatedCounterProps) {
   const [count, setCount] = useState(0);
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const isInView = useInView(ref, { once: true, margin: "-10px" });
 
   useEffect(() => {
     if (!isInView) return;
