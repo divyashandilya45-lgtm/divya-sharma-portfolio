@@ -140,10 +140,14 @@ export function Hero() {
             {/* Inner abstract branding card */}
             <div className="w-full h-full rounded-2xl bg-[#0B1120]/80 backdrop-blur-md flex flex-col items-center justify-between p-8 text-center border border-white/5 relative z-10">
               <div className="flex flex-col items-center gap-4 mt-8">
-                {/* Simulated Headshot Circle */}
-                <div className="relative h-24 w-24 rounded-full bg-gradient-to-tr from-accent-purple via-accent-pink to-accent-blue p-[2px] flex items-center justify-center shadow-lg shadow-accent-purple/20">
-                  <div className="h-full w-full rounded-full bg-[#0B1120] flex items-center justify-center">
-                    <Brain className="h-10 w-10 text-white" />
+                {/* Professional Headshot Circle */}
+                <div className="relative h-32 w-32 rounded-full bg-gradient-to-tr from-accent-purple via-accent-pink to-accent-blue p-[2.5px] flex items-center justify-center shadow-lg shadow-accent-purple/20 overflow-hidden">
+                  <div className="h-full w-full rounded-full bg-[#0B1120] overflow-hidden relative">
+                    <img
+                      src="/Professional Headshot - 1_1 Square.png"
+                      alt="Divya Sharma Professional Headshot"
+                      className="h-full w-full object-cover rounded-full scale-105 transition-transform duration-500 group-hover:scale-110"
+                    />
                   </div>
                 </div>
 
