@@ -69,6 +69,11 @@ html {
   scroll-padding-top: 80px;
 }
 
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
 body {
   background: var(--bg-primary);
   color: var(--text-primary);
