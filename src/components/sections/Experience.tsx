@@ -83,7 +83,7 @@ export function Experience() {
                     <motion.div
                       initial={{ opacity: 0, y: 30, x: isEven ? 30 : -30 }}
                       whileInView={{ opacity: 1, y: 0, x: 0 }}
-                      viewport={{ once: true, margin: "-100px" }}
+                      viewport={{ once: true, margin: "-10px" }}
                       transition={{ duration: 0.6, delay: index * 0.1 }}
                     >
                       <GlassCard 
@@ -92,7 +92,7 @@ export function Experience() {
                         <div onClick={() => setExpandedCard(isExpanded ? null : item.id)}>
                           {/* Period & Subtitle */}
                           <div className="flex flex-wrap items-center justify-between gap-2 mb-4 border-b border-white/5 pb-3">
-                            <span className="font-heading text-lg font-bold text-white">
+                            <span className="font-heading text-base md:text-lg font-bold text-white leading-snug">
                               {item.role}
                             </span>
                             <div className="flex items-center gap-1.5 font-mono text-xs text-text-secondary bg-white/5 px-2.5 py-1 rounded-full">
@@ -103,7 +103,7 @@ export function Experience() {
 
                           {/* Company & Type */}
                           <div className="flex justify-between items-center gap-2 mb-4">
-                            <span className="font-mono text-xs font-semibold text-accent-purple uppercase tracking-wider">
+                            <span className="font-mono text-xs font-semibold text-accent-purple uppercase tracking-wider leading-normal">
                               {item.company}
                             </span>
                             <span className="text-[10px] font-mono font-semibold tracking-widest text-text-muted uppercase border border-white/10 px-2 py-0.5 rounded">

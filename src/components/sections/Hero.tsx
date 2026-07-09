@@ -11,7 +11,16 @@ export function Hero() {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      const offset = 80;
+      const bodyRect = document.body.getBoundingClientRect().top;
+      const elementRect = element.getBoundingClientRect().top;
+      const elementPosition = elementRect - bodyRect;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
     }
   };
 
@@ -62,7 +71,7 @@ export function Hero() {
             <h2 className="font-heading text-xl md:text-2xl font-semibold text-white/95">
               Soft Skills Trainer • Branch Manager • Psychology Student
             </h2>
-            <div className="flex items-center gap-2 font-mono text-lg md:text-xl text-text-secondary">
+            <div className="flex items-center gap-2 flex-wrap font-mono text-lg md:text-xl text-text-secondary">
               <span>Spearheading</span>
               <span className="text-accent-purple font-bold">
                 <TypeAnimation

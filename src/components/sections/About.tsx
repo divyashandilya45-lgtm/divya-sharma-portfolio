@@ -49,7 +49,7 @@ export function About() {
         </motion.div>
 
         {/* Story Timeline */}
-        <div className="relative border-l-2 border-dashed border-white/10 ml-4 md:ml-12 pl-8 md:pl-16 space-y-12">
+        <div className="relative border-l-2 border-dashed border-white/10 ml-6 md:ml-12 pl-6 md:pl-16 space-y-12">
           {personalData.about.story.map((item, index) => {
             const Icon = storyIcons[index % storyIcons.length];
             return (
@@ -57,12 +57,12 @@ export function About() {
                 key={index}
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
+                viewport={{ once: true, margin: "-10px" }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="relative"
               >
                 {/* Connector Dot Icon */}
-                <div className="absolute -left-[50px] md:-left-[82px] top-1 flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-full bg-[#0B1120] border border-white/10 z-10 group-hover:border-accent-purple/50 transition-colors">
+                <div className="absolute -left-[37px] md:-left-[88px] top-1 flex h-8 w-8 md:h-12 md:w-12 items-center justify-center rounded-full bg-[#0B1120] border border-white/10 z-10 group-hover:border-accent-purple/50 transition-colors">
                   <Icon className="h-5 w-5 md:h-6 md:w-6 text-accent-purple" />
                 </div>
 
@@ -71,7 +71,7 @@ export function About() {
                     <span className="font-mono text-xs font-bold tracking-widest text-accent-pink uppercase bg-accent-pink/5 border border-accent-pink/10 px-3 py-1 rounded-full w-fit">
                       {item.year}
                     </span>
-                    <h3 className="font-heading text-xl font-bold text-white">
+                    <h3 className="font-heading text-lg md:text-xl font-bold text-white leading-snug">
                       {item.title}
                     </h3>
                   </div>

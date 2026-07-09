@@ -1,5 +1,26 @@
 import type { Metadata } from "next";
+import { Inter, Poppins, Space_Grotesk } from "next/font/google";
 import "./globals.css";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-body",
+  display: "swap",
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-heading",
+  display: "swap",
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-mono",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Divya Sharma | Premium Personal Brand & Portfolio Hub",
@@ -52,7 +73,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className={`${inter.variable} ${poppins.variable} ${spaceGrotesk.variable} scroll-smooth`}>
       <body className="bg-[#0B1120] text-white min-h-screen flex flex-col font-body relative overflow-x-hidden antialiased">
         {/* Structured Schema.org Data */}
         <script
