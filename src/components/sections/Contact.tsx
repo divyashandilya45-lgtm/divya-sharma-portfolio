@@ -17,6 +17,7 @@ export function Contact() {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [formType, setFormType] = useState<"query" | "booking">("query");
+  const [focusedField, setFocusedField] = useState<string | null>(null);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -212,52 +213,77 @@ export function Contact() {
               ) : (
                 <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
                   {/* Name field */}
-                  <div className="flex flex-col gap-2">
-                    <label htmlFor="name" className="font-mono text-xs text-text-secondary uppercase tracking-widest">
-                      Your Name
-                    </label>
+                  <div className="relative mt-2">
                     <input
                       required
                       type="text"
                       id="name"
                       name="name"
                       value={formData.name}
+                      onFocus={() => setFocusedField("name")}
+                      onBlur={() => setFocusedField(null)}
                       onChange={handleChange}
-                      placeholder="Jane Doe"
-                      className="w-full glass border border-white/5 rounded-xl px-4 py-3 text-sm text-white placeholder-text-muted focus:outline-none focus:border-accent-purple/50 transition-colors"
+                      className="w-full glass border border-white/5 rounded-xl px-4 pt-6 pb-2 text-sm text-white focus:outline-none focus:border-accent-purple/50 transition-all"
                     />
+                    <label
+                      htmlFor="name"
+                      className={`absolute left-4 transition-all duration-300 pointer-events-none font-mono uppercase tracking-widest ${
+                        focusedField === "name" || formData.name
+                          ? "top-2 text-[9px] text-accent-purple font-bold"
+                          : "top-1/2 -translate-y-1/2 text-xs text-text-muted"
+                      }`}
+                    >
+                      Your Name
+                    </label>
                   </div>
 
                   {/* Contact Fields group */}
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="flex flex-col gap-2">
-                      <label htmlFor="email" className="font-mono text-xs text-text-secondary uppercase tracking-widest">
-                        Email Address
-                      </label>
+                    <div className="relative">
                       <input
                         required
                         type="email"
                         id="email"
                         name="email"
                         value={formData.email}
+                        onFocus={() => setFocusedField("email")}
+                        onBlur={() => setFocusedField(null)}
                         onChange={handleChange}
-                        placeholder="jane@example.com"
-                        className="w-full glass border border-white/5 rounded-xl px-4 py-3 text-sm text-white placeholder-text-muted focus:outline-none focus:border-accent-purple/50 transition-colors"
+                        className="w-full glass border border-white/5 rounded-xl px-4 pt-6 pb-2 text-sm text-white focus:outline-none focus:border-accent-purple/50 transition-all"
                       />
-                    </div>
-                    <div className="flex flex-col gap-2">
-                      <label htmlFor="phone" className="font-mono text-xs text-text-secondary uppercase tracking-widest">
-                        Phone Number
+                      <label
+                        htmlFor="email"
+                        className={`absolute left-4 transition-all duration-300 pointer-events-none font-mono uppercase tracking-widest ${
+                          focusedField === "email" || formData.email
+                            ? "top-2 text-[9px] text-accent-purple font-bold"
+                            : "top-1/2 -translate-y-1/2 text-xs text-text-muted"
+                        }`}
+                      >
+                        Email Address
                       </label>
+                    </div>
+
+                    <div className="relative">
                       <input
                         type="tel"
                         id="phone"
                         name="phone"
                         value={formData.phone}
+                        onFocus={() => setFocusedField("phone")}
+                        onBlur={() => setFocusedField(null)}
                         onChange={handleChange}
-                        placeholder="+91-XXXXX-XXXXX"
-                        className="w-full glass border border-white/5 rounded-xl px-4 py-3 text-sm text-white placeholder-text-muted focus:outline-none focus:border-accent-purple/50 transition-colors"
+                        className="w-full glass border border-white/5 rounded-xl px-4 pt-6 pb-2 text-sm text-white focus:outline-none focus:border-accent-purple/50 transition-all"
                       />
+                      <label
+                        htmlFor="phone"
+                        className={`absolute left-4 transition-all duration-300 pointer-events-none font-mono uppercase tracking-widest ${
+                          focusedField === "phone" || formData.phone
+                            ? "top-2 text-[9px] text-accent-purple font-bold"
+                            : "top-1/2 -translate-y-1/2 text-xs text-text-muted"
+                        }`}
+                      >
+                        Phone Number
+                      </label>
                     </div>
                   </div>
 
@@ -268,52 +294,71 @@ export function Contact() {
                       animate={{ opacity: 1, height: "auto" }}
                       className="grid grid-cols-1 md:grid-cols-2 gap-6 border-t border-white/5 pt-6"
                     >
-                      <div className="flex flex-col gap-2">
-                        <label htmlFor="date" className="font-mono text-xs text-text-secondary uppercase tracking-widest">
-                          Preferred Date
-                        </label>
+                      <div className="relative">
                         <input
                           required
                           type="date"
                           id="date"
                           name="date"
                           value={formData.date}
+                          onFocus={() => setFocusedField("date")}
+                          onBlur={() => setFocusedField(null)}
                           onChange={handleChange}
-                          className="w-full glass border border-white/5 rounded-xl px-4 py-3 text-sm text-white placeholder-text-muted focus:outline-none focus:border-accent-purple/50 transition-colors"
+                          className="w-full glass border border-white/5 rounded-xl px-4 pt-6 pb-2 text-sm text-white focus:outline-none focus:border-accent-purple/50 transition-all"
                         />
-                      </div>
-                      <div className="flex flex-col gap-2">
-                        <label htmlFor="time" className="font-mono text-xs text-text-secondary uppercase tracking-widest">
-                          Preferred Time Slot
+                        <label
+                          htmlFor="date"
+                          className="absolute left-4 top-2 text-[9px] text-accent-purple font-bold font-mono uppercase tracking-widest pointer-events-none"
+                        >
+                          Preferred Date
                         </label>
+                      </div>
+
+                      <div className="relative">
                         <input
                           required
                           type="time"
                           id="time"
                           name="time"
                           value={formData.time}
+                          onFocus={() => setFocusedField("time")}
+                          onBlur={() => setFocusedField(null)}
                           onChange={handleChange}
-                          className="w-full glass border border-white/5 rounded-xl px-4 py-3 text-sm text-white placeholder-text-muted focus:outline-none focus:border-accent-purple/50 transition-colors"
+                          className="w-full glass border border-white/5 rounded-xl px-4 pt-6 pb-2 text-sm text-white focus:outline-none focus:border-accent-purple/50 transition-all"
                         />
+                        <label
+                          htmlFor="time"
+                          className="absolute left-4 top-2 text-[9px] text-accent-purple font-bold font-mono uppercase tracking-widest pointer-events-none"
+                        >
+                          Preferred Time Slot
+                        </label>
                       </div>
                     </motion.div>
                   )}
 
                   {/* Message field */}
-                  <div className="flex flex-col gap-2">
-                    <label htmlFor="message" className="font-mono text-xs text-text-secondary uppercase tracking-widest">
-                      Message / training Objectives
-                    </label>
+                  <div className="relative">
                     <textarea
                       required
                       id="message"
                       name="message"
                       rows={4}
                       value={formData.message}
+                      onFocus={() => setFocusedField("message")}
+                      onBlur={() => setFocusedField(null)}
                       onChange={handleChange}
-                      placeholder={formType === "booking" ? "Please detail the number of participants, age bracket, and key soft skill competencies to cover." : "Let me know your requirements..."}
-                      className="w-full glass border border-white/5 rounded-xl px-4 py-3 text-sm text-white placeholder-text-muted focus:outline-none focus:border-accent-purple/50 transition-colors resize-none"
+                      className="w-full glass border border-white/5 rounded-xl px-4 pt-6 pb-2 text-sm text-white focus:outline-none focus:border-accent-purple/50 transition-all resize-none"
                     />
+                    <label
+                      htmlFor="message"
+                      className={`absolute left-4 transition-all duration-300 pointer-events-none font-mono uppercase tracking-widest ${
+                        focusedField === "message" || formData.message
+                          ? "top-2 text-[9px] text-accent-purple font-bold"
+                          : "top-5 text-xs text-text-muted"
+                      }`}
+                    >
+                      Message / Training Objectives
+                    </label>
                   </div>
 
                   {/* Form Submission */}

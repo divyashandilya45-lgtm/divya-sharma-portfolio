@@ -9,6 +9,11 @@ import { Award, Target, CheckCircle2, ChevronRight, LayoutGrid, X } from "lucide
 
 export function Projects() {
   const [selectedProject, setSelectedProject] = useState<typeof projectsData[0] | null>(null);
+  const [filter, setFilter] = useState<"all" | "CSR Initiative" | "Government Project">("all");
+
+  const filteredProjects = filter === "all" 
+    ? projectsData 
+    : projectsData.filter((p) => p.category === filter);
 
   return (
     <section id="projects" className="relative py-24 bg-[#0B1120] overflow-hidden">
@@ -22,9 +27,30 @@ export function Projects() {
           subtitle="Detailed case studies of key skill enhancement and community training projects implemented."
         />
 
+        {/* Interactive Filter Bar */}
+        <div className="flex flex-wrap justify-center gap-3 mb-12">
+          {[
+            { id: "all", label: "All Works" },
+            { id: "CSR Initiative", label: "CSR Initiatives" },
+            { id: "Government Project", label: "Government Projects" }
+          ].map((btn) => (
+            <button
+              key={btn.id}
+              onClick={() => setFilter(btn.id as any)}
+              className={`px-4 py-1.5 rounded-full font-mono text-xs font-semibold tracking-wider uppercase border transition-all cursor-pointer ${
+                filter === btn.id
+                  ? "bg-accent-purple border-accent-purple text-white shadow-lg shadow-accent-purple/20"
+                  : "bg-white/5 border-white/10 text-text-secondary hover:text-white hover:border-white/20"
+              }`}
+            >
+              {btn.label}
+            </button>
+          ))}
+        </div>
+
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projectsData.map((project, index) => (
+          {filteredProjects.map((project, index) => (
             <GlassCard
               key={project.id}
               delay={index * 0.1}
