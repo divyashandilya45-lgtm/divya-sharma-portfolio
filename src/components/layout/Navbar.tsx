@@ -86,18 +86,20 @@ export function Navbar() {
           scrolled ? "glass py-4 shadow-lg border-b border-white/5" : "bg-transparent py-6"
         }`}
       >
-        <div className="w-full mx-auto flex max-w-7xl items-center justify-between px-6 md:px-12">
+        <div className="w-full mx-auto flex md:grid md:grid-cols-3 items-center justify-between px-6 md:px-12">
           {/* Logo */}
-          <button
-            onClick={() => scrollToSection("home")}
-            className="group relative font-heading text-xl font-extrabold tracking-tight text-white flex items-center gap-1 cursor-pointer"
-          >
-            <span className="text-white group-hover:text-accent-purple transition-colors duration-300">DIVYA</span>
-            <span className="gradient-text">SHARMA</span>
-          </button>
+          <div className="flex justify-start">
+            <button
+              onClick={() => scrollToSection("home")}
+              className="group relative font-heading text-xl font-extrabold tracking-tight text-white flex items-center gap-1 cursor-pointer"
+            >
+              <span className="text-white group-hover:text-accent-purple transition-colors duration-300">DIVYA</span>
+              <span className="gradient-text">SHARMA</span>
+            </button>
+          </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden items-center gap-8 md:flex">
+          <nav className="hidden md:flex justify-center items-center gap-8">
             {navItems.map((item) => (
               <button
                 key={item.id}
@@ -112,7 +114,7 @@ export function Navbar() {
           </nav>
 
           {/* Utility Controls */}
-          <div className="flex items-center gap-4">
+          <div className="flex justify-end items-center gap-4">
             {/* Theme Toggle */}
             <button
               onClick={toggleTheme}
