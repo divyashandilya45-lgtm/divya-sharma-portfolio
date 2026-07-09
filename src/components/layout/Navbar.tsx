@@ -83,10 +83,10 @@ export function Navbar() {
         animate={{ y: 0 }}
         transition={{ duration: 0.6 }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled ? "glass py-4 shadow-lg border-b border-white/5" : "bg-transparent py-6"
+          scrolled ? "bg-[#0B1120]/80 backdrop-blur-md py-4 shadow-lg border-b border-white/5" : "bg-transparent py-6"
         }`}
       >
-        <div className="w-full mx-auto flex md:grid md:grid-cols-3 items-center justify-between px-6 md:px-12">
+        <div className="w-full mx-auto flex md:grid md:grid-cols-3 items-center justify-between px-6 md:px-12 max-w-7xl">
           {/* Logo */}
           <div className="flex justify-start">
             <button
@@ -118,7 +118,7 @@ export function Navbar() {
             {/* Theme Toggle */}
             <button
               onClick={toggleTheme}
-              className="rounded-full p-2 text-text-secondary hover:text-white glass transition-colors"
+              className="rounded-full p-2.5 text-text-secondary hover:text-white glass transition-all hover:scale-105 cursor-pointer"
               aria-label="Toggle theme"
             >
               {theme === "light" ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}
@@ -127,11 +127,11 @@ export function Navbar() {
             {/* Menu Trigger */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="rounded-full p-2 text-text-secondary hover:text-white glass transition-colors md:px-4 md:py-2 md:text-xs md:font-semibold md:tracking-widest md:uppercase flex items-center gap-2"
+              className="rounded-full px-4 py-2 text-text-secondary hover:text-white glass transition-all hover:scale-105 md:text-xs md:font-semibold md:tracking-widest md:uppercase flex items-center gap-2 cursor-pointer"
               aria-label="Toggle Menu"
             >
               <span className="hidden md:inline">Menu</span>
-              {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+              {isOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
             </button>
           </div>
         </div>
