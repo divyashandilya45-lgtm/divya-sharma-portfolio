@@ -60,7 +60,6 @@
 /* ===== Base Styles ===== */
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -259,6 +258,57 @@ body {
 @media (max-width: 768px) {
   .section-container {
     padding: 60px 16px;
+  }
+}
+
+/* ===== Guaranteed Section Spacing ===== */
+/* These rules guarantee section breathing room regardless of Tailwind resets */
+section {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+@media (min-width: 1024px) {
+  section {
+    padding-top: 240px;
+    padding-bottom: 240px;
+  }
+}
+
+/* Hero section gets slightly less bottom padding since it flows into content */
+#hero {
+  padding-top: 144px;
+  padding-bottom: 96px;
+}
+
+@media (min-width: 768px) {
+  #hero {
+    padding-top: 192px;
+    padding-bottom: 128px;
+  }
+}
+
+/* Section heading bottom gap */
+.section-heading-wrapper {
+  margin-bottom: 80px;
+}
+
+@media (min-width: 768px) {
+  .section-heading-wrapper {
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-heading-wrapper {
+    margin-bottom: 120px;
   }
 }
 

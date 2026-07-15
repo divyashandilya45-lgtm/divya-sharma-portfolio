@@ -14,7 +14,7 @@ export function SectionHeading({ title, subtitle, badge, align = "center" }: Sec
   const isLeft = align === "left";
 
   return (
-    <div className={`mb-24 md:mb-32 lg:mb-36 flex flex-col ${isLeft ? "items-start text-left" : "items-center text-center"}`}>
+    <div className={`section-heading-wrapper mb-24 md:mb-32 lg:mb-36 flex flex-col ${isLeft ? "items-start text-left" : "items-center text-center"}`}>
       {badge && (
         <motion.span
           initial={{ opacity: 0, scale: 0.9 }}
