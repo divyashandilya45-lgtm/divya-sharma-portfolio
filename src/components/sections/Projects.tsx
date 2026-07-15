@@ -36,6 +36,7 @@ export function Projects() {
           ].map((btn) => (
             <button
               key={btn.id}
+              suppressHydrationWarning
               onClick={() => setFilter(btn.id as any)}
               className={`px-4 py-1.5 rounded-full font-mono text-xs font-semibold tracking-wider uppercase border transition-all cursor-pointer ${
                 filter === btn.id
@@ -93,6 +94,7 @@ export function Projects() {
               </div>
 
               <button
+                suppressHydrationWarning
                 onClick={() => setSelectedProject(project)}
                 className="mt-auto flex items-center gap-2 font-mono text-xs font-bold text-text-primary group-hover:text-accent-purple transition-colors border-t border-white/5 pt-4 w-full text-left"
               >

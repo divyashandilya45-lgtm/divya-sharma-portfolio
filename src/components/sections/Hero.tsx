@@ -153,7 +153,7 @@ export function Hero() {
                 <div className="relative h-32 w-32 rounded-full bg-gradient-to-tr from-accent-purple via-accent-pink to-accent-blue p-[2.5px] flex items-center justify-center shadow-lg shadow-accent-purple/20 overflow-hidden">
                   <div className="h-full w-full rounded-full bg-bg-primary overflow-hidden relative">
                     <img
-                      src="/Professional Headshot - 1_1 Square.png"
+                      src="/Divya.png"
                       alt="Divya Sharma Professional Headshot"
                       className="h-full w-full object-cover rounded-full scale-105 transition-transform duration-500 group-hover:scale-110"
                     />

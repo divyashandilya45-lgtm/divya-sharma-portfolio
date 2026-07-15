@@ -64,6 +64,7 @@ export function Footer() {
             Designed with Premium Aesthetics & Frameworks
           </p>
           <button
+            suppressHydrationWarning
             onClick={scrollToTop}
             className="flex items-center gap-2 rounded-full px-4 py-2 glass hover:text-white hover:border-accent-purple/50 transition-colors"
           >

@@ -88,6 +88,7 @@ export function Gallery() {
           {["all", "workshops", "seminars", "speaking", "certificates"].map((cat) => (
             <button
               key={cat}
+              suppressHydrationWarning
               onClick={() => setFilter(cat as any)}
               className={`px-4 py-1.5 rounded-full font-mono text-xs font-semibold tracking-wider uppercase border transition-all ${
                 filter === cat

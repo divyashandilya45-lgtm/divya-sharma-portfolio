@@ -58,6 +58,7 @@ export function MagneticButton({
 
   return (
     <motion.button
+      suppressHydrationWarning
       ref={buttonRef}
       type={type}
       onClick={onClick}

@@ -215,6 +215,7 @@ export function Contact() {
                   {/* Name field */}
                   <div className="relative mt-2">
                     <input
+                      suppressHydrationWarning
                       required
                       type="text"
                       id="name"
@@ -241,6 +242,7 @@ export function Contact() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="relative">
                       <input
+                        suppressHydrationWarning
                         required
                         type="email"
                         id="email"
@@ -265,6 +267,7 @@ export function Contact() {
 
                     <div className="relative">
                       <input
+                        suppressHydrationWarning
                         type="tel"
                         id="phone"
                         name="phone"

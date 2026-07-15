@@ -73,8 +73,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${plusJakartaSans.variable} ${outfit.variable} ${spaceGrotesk.variable} scroll-smooth`}>
-      <body className="bg-bg-primary text-text-primary min-h-screen flex flex-col font-body relative overflow-x-hidden antialiased">
+    <html lang="en" suppressHydrationWarning className={`${plusJakartaSans.variable} ${outfit.variable} ${spaceGrotesk.variable} scroll-smooth`}>
+      <body suppressHydrationWarning className="bg-bg-primary text-text-primary min-h-screen flex flex-col font-body relative overflow-x-hidden antialiased">
         {/* Structured Schema.org Data */}
         <script
           type="application/ld+json"
