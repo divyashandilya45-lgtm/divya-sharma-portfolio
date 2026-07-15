@@ -35,13 +35,13 @@ export function About() {
             <span className="font-mono text-xs uppercase tracking-widest text-accent-purple font-semibold">
               Mission Statement
             </span>
-            <p className="font-heading text-xl md:text-2xl font-bold text-text-primary leading-snug max-w-2xl">
+            <p className="font-heading text-xl md:text-2xl font-bold text-white leading-snug max-w-2xl">
               "{personalData.about.mission}"
             </p>
           </div>
           <div className="z-10 flex-shrink-0">
             <span className="inline-block rounded-full bg-gradient-to-r from-accent-purple via-accent-pink to-accent-blue p-[1px]">
-              <span className="inline-block bg-bg-primary rounded-full px-6 py-2.5 font-heading text-sm font-semibold text-text-primary">
+              <span className="inline-block bg-bg-primary rounded-full px-6 py-2.5 font-heading text-sm font-semibold text-white">
                 Core Philosophy
               </span>
             </span>
@@ -71,7 +71,7 @@ export function About() {
                     <span className="font-mono text-xs font-bold tracking-widest text-accent-pink uppercase bg-accent-pink/5 border border-accent-pink/10 px-3 py-1 rounded-full w-fit">
                       {item.year}
                     </span>
-                    <h3 className="font-heading text-lg md:text-xl font-bold text-text-primary leading-snug">
+                    <h3 className="font-heading text-lg md:text-xl font-bold text-white leading-snug">
                       {item.title}
                     </h3>
                   </div>

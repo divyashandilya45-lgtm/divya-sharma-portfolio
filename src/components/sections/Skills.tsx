@@ -32,7 +32,7 @@ export function Skills() {
 
         {/* Circular Skills (Top Core) */}
         <div className="mb-28">
-          <h3 className="font-heading text-lg font-semibold text-text-primary mb-10 text-center uppercase tracking-widest flex items-center justify-center gap-2">
+          <h3 className="font-heading text-lg font-semibold text-white mb-10 text-center uppercase tracking-widest flex items-center justify-center gap-2">
             <Sparkles className="h-5 w-5 text-accent-purple" />
             Core Training Pillars
           </h3>
@@ -58,7 +58,7 @@ export function Skills() {
           
           {/* Left panel: General Skills list */}
           <div className="lg:col-span-8 glass rounded-2xl p-8 border border-white/5">
-            <h3 className="font-heading text-lg font-semibold text-text-primary mb-8 uppercase tracking-widest flex items-center gap-2 border-b border-white/5 pb-4">
+            <h3 className="font-heading text-lg font-semibold text-white mb-8 uppercase tracking-widest flex items-center gap-2 border-b border-white/5 pb-4">
               <Brain className="h-5 w-5 text-accent-pink" />
               Professional Competencies
             </h3>
@@ -88,7 +88,7 @@ export function Skills() {
           <div className="lg:col-span-4 flex flex-col gap-8">
             {/* Languages card */}
             <div className="glass rounded-2xl p-8 border border-white/5">
-              <h3 className="font-heading text-lg font-semibold text-text-primary mb-6 uppercase tracking-widest flex items-center gap-2 border-b border-white/5 pb-4">
+              <h3 className="font-heading text-lg font-semibold text-white mb-6 uppercase tracking-widest flex items-center gap-2 border-b border-white/5 pb-4">
                 <Globe className="h-5 w-5 text-accent-blue" />
                 Languages
               </h3>
@@ -116,7 +116,7 @@ export function Skills() {
 
             {/* Methodology card */}
             <div className="glass rounded-2xl p-8 border border-white/5 flex flex-col gap-4">
-              <h3 className="font-heading text-sm font-semibold text-text-primary uppercase tracking-widest">
+              <h3 className="font-heading text-sm font-semibold text-white uppercase tracking-widest">
                 Training Delivery Methods
               </h3>
               <div className="flex flex-col gap-3 text-xs text-text-secondary">

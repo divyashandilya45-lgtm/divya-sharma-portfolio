@@ -47,7 +47,7 @@ export function Certifications() {
                   </div>
 
                   {/* Title & Issuer */}
-                  <h3 className="font-heading text-lg font-bold text-text-primary mb-2 leading-tight">
+                  <h3 className="font-heading text-lg font-bold text-white mb-2 leading-tight">
                     {item.title}
                   </h3>
                   <span className="font-mono text-xs font-semibold text-text-secondary uppercase tracking-widest block mb-4">

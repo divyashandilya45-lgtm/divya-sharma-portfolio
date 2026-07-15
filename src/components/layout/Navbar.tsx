@@ -2,9 +2,8 @@
 
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Sun, Moon, ArrowRight } from "lucide-react";
+import { Menu, X, ArrowRight } from "lucide-react";
 import { useScrollSpy } from "@/hooks/useScrollSpy";
-import { useTheme } from "@/hooks/useTheme";
 
 const navItems = [
   { id: "home", label: "Home" },
@@ -34,7 +33,6 @@ const allSections = [
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const { theme, toggleTheme } = useTheme();
   
   const activeSection = useScrollSpy(
     allSections.map((s) => s.id),
@@ -113,18 +111,8 @@ export function Navbar() {
             ))}
           </nav>
 
-          {/* Utility Controls */}
-          <div className="flex justify-end items-center gap-4">
-            {/* Theme Toggle */}
-            <button
-              onClick={toggleTheme}
-              className="rounded-full p-2.5 text-text-secondary hover:text-white glass transition-all hover:scale-105 cursor-pointer"
-              aria-label="Toggle theme"
-            >
-              {theme === "light" ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}
-            </button>
-
-            {/* Menu Trigger */}
+          {/* Menu Trigger */}
+          <div className="flex justify-end items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="rounded-full px-4 py-2 text-text-secondary hover:text-white glass transition-all hover:scale-105 md:text-xs md:font-semibold md:tracking-widest md:uppercase flex items-center gap-2 cursor-pointer"

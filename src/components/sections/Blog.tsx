@@ -143,7 +143,7 @@ export function Blog() {
                       </span>
                     </div>
 
-                    <h3 className="font-heading text-lg font-bold text-text-primary mb-3 group-hover:text-accent-purple transition-colors leading-snug">
+                    <h3 className="font-heading text-lg font-bold text-white mb-3 group-hover:text-accent-purple transition-colors leading-snug">
                       {post.title}
                     </h3>
 
@@ -152,7 +152,7 @@ export function Blog() {
                     </p>
                   </div>
 
-                  <span className="flex items-center gap-1 font-mono text-xs font-semibold text-text-primary group-hover:text-accent-purple transition-colors mt-auto w-fit">
+                  <span className="flex items-center gap-1 font-mono text-xs font-semibold text-white group-hover:text-accent-purple transition-colors mt-auto w-fit">
                     Read Full Article
                     <ArrowUpRight className="h-4 w-4 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                   </span>
@@ -205,7 +205,7 @@ export function Blog() {
                 </div>
               </div>
 
-              <h3 className="font-heading text-2xl md:text-3xl font-extrabold text-text-primary mb-8 leading-snug">
+              <h3 className="font-heading text-2xl md:text-3xl font-extrabold text-white mb-8 leading-snug">
                 {selectedArticle.title}
               </h3>
 
@@ -224,7 +224,7 @@ export function Blog() {
                 </div>
                 <button
                   onClick={() => setSelectedArticle(null)}
-                  className="rounded-xl px-5 py-2 glass hover:text-white hover:border-accent-purple/50 font-mono text-xs text-text-primary"
+                  className="rounded-xl px-5 py-2 glass hover:text-white hover:border-accent-purple/50 font-mono text-xs text-white"
                 >
                   Close Article
                 </button>

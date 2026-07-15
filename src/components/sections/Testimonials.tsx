@@ -49,13 +49,13 @@ export function Testimonials() {
               <div className="flex items-center gap-4 mt-auto border-t border-white/5 pt-6 z-10">
                 {/* Placeholder Avatar */}
                 <div className="h-10 w-10 rounded-full bg-gradient-to-tr from-accent-purple to-accent-blue p-[1px] flex items-center justify-center">
-                  <div className="h-full w-full rounded-full bg-bg-primary flex items-center justify-center font-heading text-text-primary font-bold text-xs">
+                  <div className="h-full w-full rounded-full bg-bg-primary flex items-center justify-center font-heading text-white font-bold text-xs">
                     {item.name.split(" ").map(n => n[0]).join("")}
                   </div>
                 </div>
 
                 <div className="flex flex-col gap-0.5">
-                  <span className="font-heading text-sm font-bold text-text-primary leading-tight">
+                  <span className="font-heading text-sm font-bold text-white leading-tight">
                     {item.name}
                   </span>
                   <span className="font-mono text-[10px] text-text-muted">

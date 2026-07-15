@@ -68,7 +68,7 @@ export function Projects() {
                   {project.category}
                 </span>
 
-                <h3 className="font-heading text-xl font-bold text-text-primary mb-4 group-hover:text-accent-purple transition-colors leading-snug">
+                <h3 className="font-heading text-xl font-bold text-white mb-4 group-hover:text-accent-purple transition-colors leading-snug">
                   {project.title}
                 </h3>
 
@@ -96,7 +96,7 @@ export function Projects() {
               <button
                 suppressHydrationWarning
                 onClick={() => setSelectedProject(project)}
-                className="mt-auto flex items-center gap-2 font-mono text-xs font-bold text-text-primary group-hover:text-accent-purple transition-colors border-t border-white/5 pt-4 w-full text-left"
+                className="mt-auto flex items-center gap-2 font-mono text-xs font-bold text-white group-hover:text-accent-purple transition-colors border-t border-white/5 pt-4 w-full text-left"
               >
                 View Project Details
                 <ChevronRight className="h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
@@ -135,7 +135,7 @@ export function Projects() {
               <span className="font-mono text-xs font-bold tracking-widest text-accent-purple uppercase block mb-2">
                 {selectedProject.category}
               </span>
-              <h3 className="font-heading text-2xl md:text-3xl font-extrabold text-text-primary mb-6">
+              <h3 className="font-heading text-2xl md:text-3xl font-extrabold text-white mb-6">
                 {selectedProject.title}
               </h3>
 

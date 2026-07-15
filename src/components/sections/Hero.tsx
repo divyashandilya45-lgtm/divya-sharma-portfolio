@@ -54,7 +54,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="font-heading text-4xl font-extrabold tracking-tight text-text-primary sm:text-5xl md:text-6xl lg:text-7xl leading-tight"
+              className="font-heading text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl leading-tight"
             >
               Hi, I'm <br />
               <span className="gradient-text">Divya Sharma</span>
@@ -68,7 +68,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="flex flex-col gap-2"
           >
-            <h2 className="font-heading text-xl md:text-2xl font-semibold text-text-primary">
+            <h2 className="font-heading text-xl md:text-2xl font-semibold text-white">
               Soft Skills Trainer • Branch Manager • Psychology Student
             </h2>
             <div className="flex items-center gap-2 flex-wrap font-mono text-lg md:text-xl text-text-secondary">
@@ -161,7 +161,7 @@ export function Hero() {
                 </div>
 
                 <div className="flex flex-col gap-1">
-                  <span className="font-heading text-lg font-bold text-text-primary uppercase tracking-wider">
+                  <span className="font-heading text-lg font-bold text-white uppercase tracking-wider">
                     Divya Sharma
                   </span>
                   <span className="font-mono text-xs text-text-secondary uppercase tracking-widest">

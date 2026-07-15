@@ -70,7 +70,7 @@ export function Achievements() {
                 <div className="mb-2">
                   <AnimatedCounter value={card.value} suffix={card.suffix} />
                 </div>
-                <h4 className="font-heading text-lg font-bold text-text-primary mb-2">
+                <h4 className="font-heading text-lg font-bold text-white mb-2">
                   {card.label}
                 </h4>
                 <p className="font-body text-sm text-text-secondary">
@@ -85,7 +85,7 @@ export function Achievements() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-stretch">
           {/* Highlights checklist */}
           <div className="lg:col-span-5 glass rounded-2xl p-8 border border-white/5 flex flex-col justify-center">
-            <h3 className="font-heading text-xl font-bold text-text-primary mb-6 uppercase tracking-wider flex items-center gap-2">
+            <h3 className="font-heading text-xl font-bold text-white mb-6 uppercase tracking-wider flex items-center gap-2">
               <Landmark className="h-5.5 w-5.5 text-accent-purple" />
               Accreditation Awards
             </h3>
@@ -113,7 +113,7 @@ export function Achievements() {
           <div className="lg:col-span-7 glass rounded-2xl p-8 border border-white/5 flex flex-col items-center relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-tr from-accent-purple/5 via-transparent to-transparent pointer-events-none" />
             
-            <h3 className="font-heading text-lg font-bold text-text-primary mb-8 text-center uppercase tracking-wider flex items-center gap-2">
+            <h3 className="font-heading text-lg font-bold text-white mb-8 text-center uppercase tracking-wider flex items-center gap-2">
               <MapPin className="h-5 w-5 text-accent-pink" />
               Regional Deployment Map
             </h3>

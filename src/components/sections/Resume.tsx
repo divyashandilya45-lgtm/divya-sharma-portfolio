@@ -30,7 +30,7 @@ export function Resume() {
           
           {/* Left panel: Description & Action buttons */}
           <div className="lg:col-span-5 flex flex-col items-start gap-6">
-            <h3 className="font-heading text-2xl md:text-3xl font-bold text-text-primary leading-tight">
+            <h3 className="font-heading text-2xl md:text-3xl font-bold text-white leading-tight">
               Looking for a verified <br />
               <span className="gradient-text">L&D Specialist?</span>
             </h3>
@@ -67,7 +67,7 @@ export function Resume() {
                 {/* Header info */}
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b border-white/5 pb-5">
                   <div>
-                    <h4 className="font-heading text-xl font-bold text-text-primary tracking-wide">
+                    <h4 className="font-heading text-xl font-bold text-white tracking-wide">
                       DIVYA SHARMA
                     </h4>
                     <span className="font-mono text-xs text-accent-purple uppercase tracking-widest block mt-0.5">
@@ -88,7 +88,7 @@ export function Resume() {
 
                 {/* Profile Summary */}
                 <div className="space-y-2">
-                  <h5 className="font-heading text-xs font-bold text-text-primary uppercase tracking-widest flex items-center gap-2">
+                  <h5 className="font-heading text-xs font-bold text-white uppercase tracking-widest flex items-center gap-2">
                     <FileText className="h-4 w-4 text-accent-purple" />
                     Profile Summary
                   </h5>
@@ -99,7 +99,7 @@ export function Resume() {
 
                 {/* Experience snippet */}
                 <div className="space-y-3">
-                  <h5 className="font-heading text-xs font-bold text-text-primary uppercase tracking-widest flex items-center gap-2">
+                  <h5 className="font-heading text-xs font-bold text-white uppercase tracking-widest flex items-center gap-2">
                     <Briefcase className="h-4 w-4 text-accent-pink" />
                     Key Professional Milestones
                   </h5>
@@ -109,7 +109,7 @@ export function Resume() {
                     <div className="relative">
                       <div className="absolute -left-[20.5px] top-1.5 h-2 w-2 rounded-full bg-accent-pink" />
                       <div className="flex justify-between items-baseline gap-2 mb-0.5">
-                        <span className="font-heading text-xs font-bold text-text-primary">Branch Manager</span>
+                        <span className="font-heading text-xs font-bold text-white">Branch Manager</span>
                         <span className="font-mono text-[9px] text-text-muted">Current</span>
                       </div>
                       <span className="font-mono text-[10px] text-text-secondary block mb-1">Himalaya Gramin Nidhi Ltd</span>
@@ -122,7 +122,7 @@ export function Resume() {
                     <div className="relative">
                       <div className="absolute -left-[20.5px] top-1.5 h-2 w-2 rounded-full bg-accent-blue" />
                       <div className="flex justify-between items-baseline gap-2 mb-0.5">
-                        <span className="font-heading text-xs font-bold text-text-primary">Soft Skills Trainer</span>
+                        <span className="font-heading text-xs font-bold text-white">Soft Skills Trainer</span>
                         <span className="font-mono text-[9px] text-text-muted">Previous</span>
                       </div>
                       <span className="font-mono text-[10px] text-text-secondary block mb-1">Naandi Foundation & CSR Initiatives</span>
@@ -135,21 +135,21 @@ export function Resume() {
 
                 {/* Education snippet */}
                 <div className="space-y-2">
-                  <h5 className="font-heading text-xs font-bold text-text-primary uppercase tracking-widest flex items-center gap-2">
+                  <h5 className="font-heading text-xs font-bold text-white uppercase tracking-widest flex items-center gap-2">
                     <Landmark className="h-4 w-4 text-accent-blue" />
                     Academic Highlights
                   </h5>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
                     <div className="glass p-2.5 rounded-lg border border-white/5">
                       <div className="flex justify-between items-baseline gap-2">
-                        <span className="font-heading text-[11px] font-bold text-text-primary">M.A. Psychology</span>
+                        <span className="font-heading text-[11px] font-bold text-white">M.A. Psychology</span>
                         <span className="font-mono text-[9px] text-accent-purple font-semibold">Pursuing</span>
                       </div>
                       <span className="font-mono text-[9px] text-text-muted">IGNOU</span>
                     </div>
                     <div className="glass p-2.5 rounded-lg border border-white/5">
                       <div className="flex justify-between items-baseline gap-2">
-                        <span className="font-heading text-[11px] font-bold text-text-primary">M.Sc. Physics/Science</span>
+                        <span className="font-heading text-[11px] font-bold text-white">M.Sc. Physics/Science</span>
                         <span className="font-mono text-[9px] text-success font-semibold">Completed</span>
                       </div>
                       <span className="font-mono text-[9px] text-text-muted">DAV College</span>
@@ -159,7 +159,7 @@ export function Resume() {
 
                 {/* Core Competencies tags */}
                 <div className="space-y-2 border-t border-white/5 pt-4">
-                  <h5 className="font-heading text-[10px] font-bold text-text-primary uppercase tracking-widest">
+                  <h5 className="font-heading text-[10px] font-bold text-white uppercase tracking-widest">
                     Expertise Highlights
                   </h5>
                   <div className="flex flex-wrap gap-1.5">

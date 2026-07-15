@@ -126,7 +126,7 @@ export function Gallery() {
                     </div>
 
                     <div className="p-6">
-                      <h4 className="font-heading text-lg font-bold text-text-primary mb-2 leading-tight">
+                      <h4 className="font-heading text-lg font-bold text-white mb-2 leading-tight">
                         {item.title}
                       </h4>
                       <p className="font-body text-sm text-text-muted leading-relaxed">

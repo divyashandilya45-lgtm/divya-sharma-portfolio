@@ -22,7 +22,7 @@ export function Footer() {
 
         {/* Quote section */}
         <div className="mb-12 max-w-xl text-center">
-          <p className="font-heading text-lg md:text-xl font-medium italic text-text-primary">
+          <p className="font-heading text-lg md:text-xl font-medium italic text-white">
             "{personalData.quote}"
           </p>
           <div className="mt-4 h-[2px] w-12 bg-accent-purple mx-auto rounded-full" />
