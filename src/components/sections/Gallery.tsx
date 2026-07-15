@@ -72,7 +72,7 @@ export function Gallery() {
   const filteredItems = filter === "all" ? items : items.filter((item) => item.category === filter);
 
   return (
-    <section id="gallery" className="relative py-24 bg-[#0B1120] overflow-hidden">
+    <section id="gallery" className="relative py-36 md:py-52 lg:py-60 bg-bg-primary overflow-hidden">
       {/* Background glow spots */}
       <div className="absolute top-[20%] left-[5%] pointer-events-none h-[400px] w-[400px] rounded-full bg-accent-blue/5 blur-[120px]" />
 
@@ -84,7 +84,7 @@ export function Gallery() {
         />
 
         {/* Filter controls */}
-        <div className="flex flex-wrap justify-center gap-3 mb-12">
+        <div className="flex flex-wrap justify-center gap-3 mb-16">
           {["all", "workshops", "seminars", "speaking", "certificates"].map((cat) => (
             <button
               key={cat}
@@ -101,7 +101,7 @@ export function Gallery() {
         </div>
 
         {/* Masonry/Grid display */}
-        <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
           <AnimatePresence mode="popLayout">
             {filteredItems.map((item) => {
               const Icon = item.icon;
@@ -117,7 +117,7 @@ export function Gallery() {
                   <GlassCard className="flex flex-col justify-between hover:border-accent-purple/30 h-full p-0 overflow-hidden relative group">
                     {/* Visual Media Placeholder container */}
                     <div className={`aspect-[4/3] w-full bg-gradient-to-tr ${item.gradient} flex flex-col items-center justify-center p-6 border-b border-white/5 relative`}>
-                      <div className="absolute inset-0 bg-[#0B1120]/10 backdrop-blur-[2px] opacity-100 group-hover:opacity-0 transition-opacity duration-300 pointer-events-none" />
+                      <div className="absolute inset-0 bg-bg-primary/10 backdrop-blur-[2px] opacity-100 group-hover:opacity-0 transition-opacity duration-300 pointer-events-none" />
                       <Icon className="h-10 w-10 text-white opacity-80 mb-3 group-hover:scale-110 transition-transform duration-300" />
                       <span className="font-mono text-[10px] tracking-widest text-white/60 uppercase">
                         {item.category} Event
@@ -125,7 +125,7 @@ export function Gallery() {
                     </div>
 
                     <div className="p-6">
-                      <h4 className="font-heading text-lg font-bold text-white mb-2 leading-tight">
+                      <h4 className="font-heading text-lg font-bold text-text-primary mb-2 leading-tight">
                         {item.title}
                       </h4>
                       <p className="font-body text-sm text-text-muted leading-relaxed">

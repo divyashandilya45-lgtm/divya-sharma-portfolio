@@ -41,7 +41,7 @@ export function Experience() {
   const [expandedCard, setExpandedCard] = React.useState<number | null>(null);
 
   return (
-    <section id="experience" className="relative py-24 bg-[#0B1120] overflow-hidden">
+    <section id="experience" className="relative py-36 md:py-52 lg:py-60 bg-bg-primary overflow-hidden">
       {/* Background glow spot */}
       <div className="absolute top-[20%] right-[5%] pointer-events-none h-[400px] w-[400px] rounded-full bg-accent-blue/5 blur-[120px]" />
 
@@ -57,7 +57,7 @@ export function Experience() {
           {/* Vertical timeline center line */}
           <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-accent-purple via-accent-blue to-transparent transform md:-translate-x-1/2" />
 
-          <div className="space-y-16">
+          <div className="space-y-24 md:space-y-28">
             {experienceData.map((item, index) => {
               const IconComponent = iconMap[item.icon] || Briefcase;
               const isEven = index % 2 === 0;
@@ -71,7 +71,7 @@ export function Experience() {
                   }`}
                 >
                   {/* Timeline node dot */}
-                  <div className="absolute left-4 md:left-1/2 top-6 flex h-8 w-8 items-center justify-center rounded-full bg-[#0B1120] border-2 border-accent-purple transform -translate-x-1/2 z-10 shadow-lg shadow-accent-purple/35">
+                  <div className="absolute left-4 md:left-1/2 top-6 flex h-8 w-8 items-center justify-center rounded-full bg-bg-primary border-2 border-accent-purple transform -translate-x-1/2 z-10 shadow-lg shadow-accent-purple/35">
                     <IconComponent className="h-4 w-4 text-accent-purple" />
                   </div>
 
@@ -92,7 +92,7 @@ export function Experience() {
                         <div onClick={() => setExpandedCard(isExpanded ? null : item.id)}>
                           {/* Period & Subtitle */}
                           <div className="flex flex-wrap items-center justify-between gap-2 mb-4 border-b border-white/5 pb-3">
-                            <span className="font-heading text-base md:text-lg font-bold text-white leading-snug">
+                            <span className="font-heading text-base md:text-lg font-bold text-text-primary leading-snug">
                               {item.role}
                             </span>
                             <div className="flex items-center gap-1.5 font-mono text-xs text-text-secondary bg-white/5 px-2.5 py-1 rounded-full">
@@ -136,7 +136,7 @@ export function Experience() {
                           transition={{ duration: 0.3, ease: "easeInOut" }}
                           className="overflow-hidden border-t border-white/5 pt-4 mt-2"
                         >
-                          <h6 className="font-heading text-[11px] font-bold text-white uppercase tracking-wider mb-3">
+                          <h6 className="font-heading text-[11px] font-bold text-text-primary uppercase tracking-wider mb-3">
                             Core Responsibilities & Successes
                           </h6>
                           <ul className="space-y-2 mb-6">
@@ -154,7 +154,7 @@ export function Experience() {
                           {item.highlights.map((highlight, idx) => (
                             <span
                               key={idx}
-                              className="text-[11px] font-mono font-medium text-white/90 bg-accent-purple/10 border border-accent-purple/20 px-2.5 py-1 rounded-md"
+                              className="text-[11px] font-mono font-semibold text-accent-purple bg-accent-purple/10 border border-accent-purple/20 px-2.5 py-1 rounded-md"
                             >
                               {highlight}
                             </span>

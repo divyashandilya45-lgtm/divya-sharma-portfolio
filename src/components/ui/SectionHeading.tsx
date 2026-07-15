@@ -14,7 +14,7 @@ export function SectionHeading({ title, subtitle, badge, align = "center" }: Sec
   const isLeft = align === "left";
 
   return (
-    <div className={`mb-16 flex flex-col ${isLeft ? "items-start text-left" : "items-center text-center"}`}>
+    <div className={`mb-24 md:mb-32 lg:mb-36 flex flex-col ${isLeft ? "items-start text-left" : "items-center text-center"}`}>
       {badge && (
         <motion.span
           initial={{ opacity: 0, scale: 0.9 }}
@@ -32,7 +32,7 @@ export function SectionHeading({ title, subtitle, badge, align = "center" }: Sec
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.1 }}
-        className="font-heading text-3xl font-extrabold tracking-tight text-white sm:text-4xl md:text-5xl"
+        className="font-heading text-4xl font-extrabold tracking-tight text-text-primary sm:text-5xl md:text-6xl"
       >
         {title.split(" ").slice(0, -1).join(" ")}{" "}
         <span className="gradient-text">

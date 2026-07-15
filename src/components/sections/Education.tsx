@@ -17,7 +17,7 @@ const iconMap: Record<string, React.ComponentType<any>> = {
 
 export function Education() {
   return (
-    <section id="education" className="relative py-24 bg-[#0B1120] overflow-hidden">
+    <section id="education" className="relative py-36 md:py-52 lg:py-60 bg-bg-primary overflow-hidden">
       {/* Background ambient light */}
       <div className="absolute bottom-[10%] left-[5%] pointer-events-none h-[400px] w-[400px] rounded-full bg-accent-purple/5 blur-[120px]" />
 
@@ -29,7 +29,7 @@ export function Education() {
         />
 
         {/* Education Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
           {educationData.map((item, index) => {
             const IconComponent = iconMap[item.icon] || School;
 
@@ -55,7 +55,7 @@ export function Education() {
                   </div>
 
                   {/* Degree & Inst */}
-                  <h3 className="font-heading text-xl font-bold text-white mb-2 leading-tight">
+                  <h3 className="font-heading text-xl font-bold text-text-primary mb-2 leading-tight">
                     {item.degree}
                   </h3>
                   <span className="font-mono text-xs font-semibold text-text-secondary uppercase tracking-widest block mb-4">

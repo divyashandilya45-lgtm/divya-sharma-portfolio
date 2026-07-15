@@ -15,14 +15,14 @@ export function Footer() {
   };
 
   return (
-    <footer className="relative border-t border-white/5 bg-[#0B1120] py-16">
+    <footer className="relative border-t border-white/5 bg-bg-primary py-16">
       <div className="mx-auto max-w-7xl px-6 md:px-12 flex flex-col items-center">
         {/* Decorative elements */}
         <div className="absolute inset-0 pointer-events-none opacity-5 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-accent-purple/30 via-transparent to-transparent" />
 
         {/* Quote section */}
         <div className="mb-12 max-w-xl text-center">
-          <p className="font-heading text-lg md:text-xl font-medium italic text-white/90">
+          <p className="font-heading text-lg md:text-xl font-medium italic text-text-primary">
             "{personalData.quote}"
           </p>
           <div className="mt-4 h-[2px] w-12 bg-accent-purple mx-auto rounded-full" />

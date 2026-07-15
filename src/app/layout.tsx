@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { Inter, Poppins, Space_Grotesk } from "next/font/google";
+import { Plus_Jakarta_Sans, Outfit, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
+const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
   variable: "--font-body",
   display: "swap",
 });
 
-const poppins = Poppins({
+const outfit = Outfit({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800", "900"],
   variable: "--font-heading",
@@ -73,8 +73,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${poppins.variable} ${spaceGrotesk.variable} scroll-smooth`}>
-      <body className="bg-[#0B1120] text-white min-h-screen flex flex-col font-body relative overflow-x-hidden antialiased">
+    <html lang="en" className={`${plusJakartaSans.variable} ${outfit.variable} ${spaceGrotesk.variable} scroll-smooth`}>
+      <body className="bg-bg-primary text-text-primary min-h-screen flex flex-col font-body relative overflow-x-hidden antialiased">
         {/* Structured Schema.org Data */}
         <script
           type="application/ld+json"

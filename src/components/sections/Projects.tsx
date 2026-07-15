@@ -16,7 +16,7 @@ export function Projects() {
     : projectsData.filter((p) => p.category === filter);
 
   return (
-    <section id="projects" className="relative py-24 bg-[#0B1120] overflow-hidden">
+    <section id="projects" className="relative py-36 md:py-52 lg:py-60 bg-bg-primary overflow-hidden">
       {/* Background glow spot */}
       <div className="absolute top-[20%] left-[10%] pointer-events-none h-[400px] w-[400px] rounded-full bg-accent-blue/5 blur-[120px]" />
 
@@ -28,7 +28,7 @@ export function Projects() {
         />
 
         {/* Interactive Filter Bar */}
-        <div className="flex flex-wrap justify-center gap-3 mb-12">
+        <div className="flex flex-wrap justify-center gap-3 mb-16">
           {[
             { id: "all", label: "All Works" },
             { id: "CSR Initiative", label: "CSR Initiatives" },
@@ -49,7 +49,7 @@ export function Projects() {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
           {filteredProjects.map((project, index) => (
             <GlassCard
               key={project.id}
@@ -67,7 +67,7 @@ export function Projects() {
                   {project.category}
                 </span>
 
-                <h3 className="font-heading text-xl font-bold text-white mb-4 group-hover:text-accent-purple transition-colors leading-snug">
+                <h3 className="font-heading text-xl font-bold text-text-primary mb-4 group-hover:text-accent-purple transition-colors leading-snug">
                   {project.title}
                 </h3>
 
@@ -94,7 +94,7 @@ export function Projects() {
 
               <button
                 onClick={() => setSelectedProject(project)}
-                className="mt-auto flex items-center gap-2 font-mono text-xs font-bold text-white group-hover:text-accent-purple transition-colors border-t border-white/5 pt-4 w-full text-left"
+                className="mt-auto flex items-center gap-2 font-mono text-xs font-bold text-text-primary group-hover:text-accent-purple transition-colors border-t border-white/5 pt-4 w-full text-left"
               >
                 View Project Details
                 <ChevronRight className="h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
@@ -133,7 +133,7 @@ export function Projects() {
               <span className="font-mono text-xs font-bold tracking-widest text-accent-purple uppercase block mb-2">
                 {selectedProject.category}
               </span>
-              <h3 className="font-heading text-2xl md:text-3xl font-extrabold text-white mb-6">
+              <h3 className="font-heading text-2xl md:text-3xl font-extrabold text-text-primary mb-6">
                 {selectedProject.title}
               </h3>
 

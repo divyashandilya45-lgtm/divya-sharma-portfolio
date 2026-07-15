@@ -81,7 +81,7 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="relative py-24 bg-[#0B1120] overflow-hidden">
+    <section id="contact" className="relative py-36 md:py-52 lg:py-60 bg-bg-primary overflow-hidden">
       {/* Background ambient lighting */}
       <div className="absolute top-[40%] right-[10%] pointer-events-none h-[500px] w-[500px] rounded-full bg-accent-purple/5 blur-[120px]" />
 
@@ -92,7 +92,7 @@ export function Contact() {
           subtitle="Ready to transform your communication skills, schedule a branch audit, or book a psychology mentorship session?"
         />
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-stretch">
           
           {/* Left panel: Info Hub */}
           <div className="lg:col-span-5 flex flex-col justify-between gap-8">

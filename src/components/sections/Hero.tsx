@@ -27,7 +27,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-screen items-center justify-center overflow-hidden pt-28 pb-16"
+      className="relative flex min-h-screen items-center justify-center overflow-hidden pt-36 pb-24 md:pt-48 md:pb-32"
     >
       {/* Decorative Glow */}
       <div className="absolute inset-0 pointer-events-none z-0">
@@ -54,7 +54,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="font-heading text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl leading-tight"
+              className="font-heading text-4xl font-extrabold tracking-tight text-text-primary sm:text-5xl md:text-6xl lg:text-7xl leading-tight"
             >
               Hi, I'm <br />
               <span className="gradient-text">Divya Sharma</span>
@@ -68,7 +68,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="flex flex-col gap-2"
           >
-            <h2 className="font-heading text-xl md:text-2xl font-semibold text-white/95">
+            <h2 className="font-heading text-xl md:text-2xl font-semibold text-text-primary">
               Soft Skills Trainer • Branch Manager • Psychology Student
             </h2>
             <div className="flex items-center gap-2 flex-wrap font-mono text-lg md:text-xl text-text-secondary">
@@ -147,11 +147,11 @@ export function Hero() {
             <div className="absolute inset-0 opacity-20 border border-dashed border-white/40 rounded-2xl group-hover:scale-95 transition-transform duration-500" />
 
             {/* Inner abstract branding card */}
-            <div className="w-full h-full rounded-2xl bg-[#0B1120]/80 backdrop-blur-md flex flex-col items-center justify-between p-8 text-center border border-white/5 relative z-10">
+            <div className="w-full h-full rounded-2xl bg-bg-primary/80 backdrop-blur-md flex flex-col items-center justify-between p-8 text-center border border-white/5 relative z-10">
               <div className="flex flex-col items-center gap-4 mt-8">
                 {/* Professional Headshot Circle */}
                 <div className="relative h-32 w-32 rounded-full bg-gradient-to-tr from-accent-purple via-accent-pink to-accent-blue p-[2.5px] flex items-center justify-center shadow-lg shadow-accent-purple/20 overflow-hidden">
-                  <div className="h-full w-full rounded-full bg-[#0B1120] overflow-hidden relative">
+                  <div className="h-full w-full rounded-full bg-bg-primary overflow-hidden relative">
                     <img
                       src="/Professional Headshot - 1_1 Square.png"
                       alt="Divya Sharma Professional Headshot"
@@ -161,7 +161,7 @@ export function Hero() {
                 </div>
 
                 <div className="flex flex-col gap-1">
-                  <span className="font-heading text-lg font-bold text-white uppercase tracking-wider">
+                  <span className="font-heading text-lg font-bold text-text-primary uppercase tracking-wider">
                     Divya Sharma
                   </span>
                   <span className="font-mono text-xs text-text-secondary uppercase tracking-widest">
